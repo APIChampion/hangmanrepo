@@ -1,15 +1,9 @@
 public class Hangman {
 
-  public static void public static void main(String[] args) {
+  public static void main(String[] args) {
     //my awesome code will eventually go here
-    Game game = new Game("treehouse")
+    Game game = new Game("treehouse");
   }
-
-
-}
-
-
-
 
 
 }
