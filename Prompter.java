@@ -27,7 +27,14 @@ class Prompter {
 
   }
   public void displayProgress(){
-    System.out.printf("you have %d left to solve: %s%n", game.getRemainingTries(),game.getCurrentProgress());
+    System.out.printf("you have %d left to solve: %s %n", game.getRemainingTries(),game.getCurrentProgress());
   }
 
-}
+  public void displayOutcome(){
+    if (game.isWon()){
+      System.out.printf("Congratulations you won   %n");
+    } else {
+      System.out.printf("Bummer you lost. the word was %s. :( %n ",game.getAnswer());
+    }
+  }
+    }

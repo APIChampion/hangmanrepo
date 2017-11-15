@@ -36,7 +36,7 @@ class Game {
     }
     return applyGuess(letters.charAt(0));
   }
-  
+
   public int getRemainingTries(){
     return MAX_MISSES - misses.length();
   }
@@ -52,7 +52,13 @@ class Game {
     }
     return progress;
   }
+  public String getAnswer(){
+    return answer;
+  }
+  public boolean isWon(){
+    return getCurrentProgress().indexOf('-') == -1;
 
+  }
 
 
 
