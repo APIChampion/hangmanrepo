@@ -30,7 +30,13 @@ class Game {
       }
     return isHit;
   }
-
+  public boolean applyGuess(String letters){
+    if (letters.length()== 0){
+      throw new IllegalArgumentException ("No letter found");
+    }
+    return applyGuess(letters.charAt(0));
+  }
+  
   public int getRemainingTries(){
     return MAX_MISSES - misses.length();
   }
